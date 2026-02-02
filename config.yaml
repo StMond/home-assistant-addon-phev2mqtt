@@ -1,10 +1,10 @@
 ---
 name: PHEV
-version: 1.4.1
+version: 1.4.2
 slug: phev
 description: Mitsubishi Outlander PHEV
 arch: [armhf, armv7, aarch64, amd64, i386]
-url: https://github.com/buxtronix/phev2mqtt
+url: https://github.com/StMond/phev2mqtt
 startup: application
 boot: auto
 init: false

@@ -12,7 +12,7 @@ RUN apk update && apk add --no-cache \
 	libpcap-dev
 
 WORKDIR /tmp
-RUN git clone https://github.com/buxtronix/phev2mqtt.git
+RUN git clone -b StMond-patch-1 --single-branch https://github.com/StMond/phev2mqtt.git
 COPY --from=golang:alpine /usr/local/go/ /usr/local/go/
 RUN cd /tmp/phev2mqtt && \
     /usr/local/go/bin/go build
